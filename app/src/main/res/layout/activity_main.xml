@@ -7,71 +7,72 @@
     android:background="@drawable/img"
     tools:context=".MainActivity">
 
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addition"
-        android:layout_width="260dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold|italic"
-
         android:textColor="#0F64F8"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/button_border"
         android:text="Addition"
-
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/subtraction"
-        android:layout_width="260dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textColor="#0F64F8"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold|italic"
-        android:layout_marginTop="100dp"
+        android:textColor="#0F64F8"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:text="Subtraction"
         android:background="@drawable/button_border"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addition"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addition" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/multi"
-        android:layout_width="260dp"
-        android:background="@drawable/button_border"
-        android:textColor="#0F64F8"
-        android:textSize="30dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Multiplication"
+        android:textSize="30sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#0F64F8"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Multiplication"
+        android:background="@drawable/button_border"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtraction"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtraction" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/about"
-        android:layout_width="260dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="248dp"
-        android:background="@drawable/button_border"
-        android:text="ABout"
-        android:textColor="#0F64F8"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        android:textColor="#0F64F8"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="About"
+        android:background="@drawable/button_border"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtraction"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/multi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

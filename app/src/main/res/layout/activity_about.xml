@@ -6,4 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".about">
 
+    <Button
+        android:id="@+id/to_policy"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Privacy Policies"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/to_portfolio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:text="Read about developer"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

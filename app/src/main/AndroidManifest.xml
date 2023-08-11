@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.omkar_dhage_4535.math_master">
+    package="com.omkardhage4535.math_master">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,22 +16,25 @@
         android:theme="@style/Theme.Math_Master"
         tools:targetApi="31">
         <activity
-            android:name=".about"
+            android:name="com.omkardhage4535.math_master.WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".multi_act"
+            android:name="com.omkardhage4535.math_master.about"
             android:exported="false" />
         <activity
-            android:name=".subtraction_act"
+            android:name="com.omkardhage4535.math_master.multi_act"
             android:exported="false" />
         <activity
-            android:name=".game_over"
+            android:name="com.omkardhage4535.math_master.subtraction_act"
             android:exported="false" />
         <activity
-            android:name=".addition_act"
+            android:name="com.omkardhage4535.math_master.game_over"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.omkardhage4535.math_master.addition_act"
+            android:exported="false" />
+        <activity
+            android:name="com.omkardhage4535.math_master.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

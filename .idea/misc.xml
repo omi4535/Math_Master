@@ -4,11 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/play store ready/Math_Master/app/src/main/res/drawable/button_border.xml" value="0.1" />
+        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout-small/activity_multi.xml" value="0.4609375" />
+        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout-sw5dp/activity_multi.xml" value="0.16032608695652173" />
+        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_about.xml" value="0.2" />
         <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_addition.xml" value="0.1" />
-        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_game_over.xml" value="0.1" />
-        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_multi.xml" value="0.1" />
-        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_sub.xml" value="0.1" />
+        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_game_over.xml" value="0.19583333333333333" />
+        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_multi.xml" value="0.16032608695652173" />
+        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_sub.xml" value="0.12090163934426229" />
+        <entry key="..\:/play store ready/Math_Master/app/src/main/res/layout/activity_web_view.xml" value="0.2" />
       </map>
     </option>
   </component>

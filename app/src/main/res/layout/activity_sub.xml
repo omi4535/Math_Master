@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img_1"
-    android:id="@+id/sback"
+    android:id="@+id/back"
     tools:context=".subtraction_act">
-
 
     <TextView
 
-        android:id="@+id/textView5"
+        android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
         android:text="score : "
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,64 +24,66 @@
         android:id="@+id/add_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_marginStart="13dp"
         android:layout_marginTop="16dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/text4"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
-
-        android:id="@+id/a"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="56dp"
-        android:text="lives : "
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/timer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:textColor="@color/black"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+
+        android:id="@+id/a"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:text="lives : "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/add_live"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
-        android:textColor="@color/black"
         app:layout_constraintBaseline_toBaselineOf="@+id/a"
         app:layout_constraintStart_toEndOf="@+id/a" />
 
     <TextView
         android:id="@+id/title_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:background="#02000000"
-        android:text="Subtraction"
         android:textColor="#C62499F4"
+        android:layout_width="150dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:text="Subtraction"
         android:textSize="30dp"
+        android:background="#02000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/opration_add"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
         android:textAlignment="center"
         android:textColor="#C62499F4"
         android:textSize="40dp"
@@ -95,25 +97,28 @@
         android:id="@+id/add_ans"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
         android:hint="Enter your answer"
-        android:inputType="numberSigned"
+        android:inputType="numberDecimal"
         android:textColor="#C62499F4"
         android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/opration_add" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/add_move"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
         android:background="@drawable/button_border"
         android:text="move to next \nquestion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/add_check" />
+        app:layout_constraintStart_toEndOf="@+id/add_check"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/add_check"
@@ -122,6 +127,7 @@
         android:layout_marginStart="11dp"
         android:layout_marginEnd="18dp"
         android:background="@drawable/button_border"
+        android:imeOptions="actionDone"
         android:padding="18dp"
         android:text="check"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,10 +136,10 @@
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.726" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <TextView
-        android:id="@+id/congro_msgs"
+        android:id="@+id/congro_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40dp"
@@ -143,7 +149,4 @@
         app:layout_constraintBottom_toTopOf="@+id/title_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintStart_toStartOf="parent" /></androidx.constraintlayout.widget.ConstraintLayout>

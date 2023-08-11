@@ -7,55 +7,46 @@
     android:background="@drawable/img_4_back_over"
     tools:context=".game_over">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="340dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/cogro2" />
-
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="260dp"
         android:text="your score"
         android:textColor="#EA3939"
-        android:textStyle="bold"
         android:textSize="32dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
         android:text=""
-        android:textSize="60dp"
         android:textColor="#EA3939"
+        android:textSize="60dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/restart"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:textStyle="bold"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="596dp"
         android:background="@drawable/button_back"
-        android:textColor="#D7BDE9FA"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="620dp"
         android:text="Restart"
+        android:textColor="#D7BDE9FA"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,9 +54,9 @@
         android:id="@+id/exit"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="64dp"
-        android:text="Exit"
+        android:layout_marginEnd="72dp"
         android:background="@drawable/button_back"
+        android:text="Exit"
         android:textColor="#D7BDE9FA"
         app:layout_constraintBaseline_toBaselineOf="@+id/restart"
         app:layout_constraintEnd_toEndOf="parent" />
